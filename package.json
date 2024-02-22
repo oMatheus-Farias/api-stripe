@@ -1,8 +1,14 @@
 {
   "name": "club-ecommerce-stripe-api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "license": "MIT",
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
