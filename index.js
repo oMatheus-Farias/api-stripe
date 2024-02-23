@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PAYMENT_CONFIRMATION_URL = `https://vestirvibes-ecommerce.vercel.app/payment-confirmation`;
+const PAYMENT_CONFIRMATION_URL = `${process.env.FRONT_END_URL}/payment-confirmation`;
 
 app.post("/create-checkout-session", async (req, res) => {
   console.log(req.body);
